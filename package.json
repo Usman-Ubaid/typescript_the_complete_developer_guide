@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "buffer": "^6.0.3"
+  }
+}
