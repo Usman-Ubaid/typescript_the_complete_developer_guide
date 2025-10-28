@@ -2,8 +2,8 @@ import { User } from "./User";
 import { Company } from "./Company";
 
 interface MapMarker {
-  name: string;
   location: { lat: number; lng: number };
+  markerContent(): string;
 }
 
 export class CustomMap {
@@ -23,12 +23,11 @@ export class CustomMap {
     const marker = new google.maps.Marker({
       map: this.googleMap,
       position: mappable.location,
-      title: mappable.name,
     });
 
     marker.addListener("click", () => {
       const infoWindow = new google.maps.InfoWindow({
-        content: "HI There!",
+        content: mappable.markerContent(),
       });
       infoWindow.open(this.googleMap, marker);
     });
