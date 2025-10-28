@@ -7,5 +7,5 @@ const randomCompany = new Company();
 
 const customMap = new CustomMap("map");
 
-customMap.addUserMarker(randomUser);
-customMap.addCompanyMarker(randomCompany);
+customMap.addMarker(randomUser);
+customMap.addMarker(randomCompany);
