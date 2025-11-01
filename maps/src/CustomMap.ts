@@ -1,6 +1,3 @@
-import { User } from "./User";
-import { Company } from "./Company";
-
 export interface MapMarker {
   location: { lat: number; lng: number };
   markerContent(): string;
