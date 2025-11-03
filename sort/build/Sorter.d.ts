@@ -1,12 +1,7 @@
-interface Sortable {
-    length: number;
-    compare(leftIndex: number, rightIndex: number): boolean;
-    swap(leftIndex: number, rightIndex: number): void;
-}
-export declare class Sorter {
-    collection: Sortable;
-    constructor(collection: Sortable);
+export declare abstract class Sorter {
+    abstract compare(leftIndex: number, rightIndex: number): boolean;
+    abstract swap(leftIndex: number, rightIndex: number): void;
+    abstract length: number;
     sort(): void;
 }
-export {};
 //# sourceMappingURL=Sorter.d.ts.map
