@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import { dateStringToDate } from "./utils.js";
+import { MatchResult } from "./MatchResult.js";
 
 export class CsvFileReader {
   data: string[][] = [];
@@ -15,7 +16,9 @@ export class CsvFileReader {
           row[1],
           row[2],
           parseInt(row[3]!),
-          parseInt(row[3]!),
+          parseInt(row[4]!),
+          row[5] as MatchResult,
+          row[6],
         ];
       });
   }
