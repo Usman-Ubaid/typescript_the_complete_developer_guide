@@ -2,7 +2,10 @@ import { CsvFileReader } from "./CsvFileReader.js";
 import { MatchResult } from "./MatchResult.js";
 const reader = new CsvFileReader("football.csv");
 reader.read();
-console.log(reader.data);
+// if (reader.data.length > 0 && reader.data[0]) {
+//   const date = reader.data[0][0];
+// }
+const date = reader.data?.[0];
 let manUnitedWins = 0;
 for (let match of reader.data) {
     if (match[1] === "Man United" && match[5] === MatchResult.HomeWin) {
