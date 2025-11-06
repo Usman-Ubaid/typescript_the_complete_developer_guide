@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+import { dateStringToDate } from "./utils.js";
 
 export class CsvFileReader {
   data: string[][] = [];
@@ -7,6 +8,15 @@ export class CsvFileReader {
   read(): void {
     this.data = readFileSync(this.filename, { encoding: "utf-8" })
       .split("\n")
-      .map((row): string[] => row.split(","));
+      .map((row): string[] => row.split(","))
+      .map((row: string[]): any => {
+        return [
+          dateStringToDate(row[0]!),
+          row[1],
+          row[2],
+          parseInt(row[3]!),
+          parseInt(row[3]!),
+        ];
+      });
   }
 }
