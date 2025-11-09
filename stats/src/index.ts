@@ -1,13 +1,12 @@
-import { CsvFileReader } from "./CsvFileReader.js";
 import { MatchReader } from "./MatchReader.js";
 import { Summary } from "./Summary.js";
-import { WinsAnalysis } from "./analyzers/WinsAnalysis.js";
-import { ConsoleReport } from "./reportTargets/ConsoleReport.js";
-import { HtmlReport } from "./reportTargets/HtmlReport.js";
 
-const csvFileReader = new CsvFileReader("football.csv");
-const matchReader = new MatchReader(csvFileReader);
+const matchReader = MatchReader.matchReader("football.csv");
 matchReader.load();
 
-const summary = new Summary(new WinsAnalysis("Chelsea"), new HtmlReport());
+// Summary.winsAnalysisWithHtmlReports("Man United").buildAndPrintReport(
+//   matchReader.matches
+// );
+
+const summary = Summary.winsAnalysisWithHtmlReports("Chelsea");
 summary.buildAndPrintReport(matchReader.matches);

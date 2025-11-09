@@ -5,6 +5,7 @@ interface DataReader {
 }
 export declare class MatchReader {
     reader: DataReader;
+    static matchReader(filename: string): MatchReader;
     matches: MatchData[];
     constructor(reader: DataReader);
     load(): void;

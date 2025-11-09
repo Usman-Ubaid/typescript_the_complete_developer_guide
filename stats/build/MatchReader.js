@@ -1,6 +1,10 @@
+import { CsvFileReader } from "./CsvFileReader.js";
 import { dateStringToDate } from "./utils.js";
 export class MatchReader {
     reader;
+    static matchReader(filename) {
+        return new MatchReader(new CsvFileReader(filename));
+    }
     matches = [];
     constructor(reader) {
         this.reader = reader;
