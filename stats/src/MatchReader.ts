@@ -1,3 +1,4 @@
+import type { MatchData } from "./MatchData.js";
 import type { MatchResult } from "./MatchResult.js";
 import { dateStringToDate } from "./utils.js";
 
@@ -5,8 +6,6 @@ interface DataReader {
   read(): void;
   data: string[][];
 }
-
-type MatchData = [Date, string, string, number, number, MatchResult, string];
 
 export class MatchReader {
   matches: MatchData[] = [];
