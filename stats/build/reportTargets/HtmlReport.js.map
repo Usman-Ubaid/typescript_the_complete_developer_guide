@@ -1,0 +1,1 @@
+{"version":3,"file":"HtmlReport.js","sourceRoot":"","sources":["../../src/reportTargets/HtmlReport.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,IAAI,CAAC;AAGnC,MAAM,OAAO,UAAU;IACrB,KAAK,CAAC,MAAc;QAClB,MAAM,IAAI,GAAG;;iBAEA,MAAM;SACd,CAAC;QACN,aAAa,CAAC,aAAa,EAAE,IAAI,CAAC,CAAC;IACrC,CAAC;CACF"}
