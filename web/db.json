@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Usman Ubaid",
+      "age": 29,
+      "id": 1
+    },
+    {
+      "name": "Usman Ubaid",
+      "age": 29,
+      "id": 2
+    },
+    {
+      "name": "Usman Ubaid",
+      "age": 29,
+      "id": 3
+    }
+  ]
+}
