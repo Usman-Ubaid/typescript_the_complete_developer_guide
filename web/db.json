@@ -1,19 +1,14 @@
 {
   "users": [
     {
-      "name": "Usman Ubaid",
-      "age": 29,
-      "id": 1
+      "id": 1,
+      "name": "herrington",
+      "age": 65
     },
     {
-      "name": "Usman Ubaid",
-      "age": 29,
-      "id": 2
-    },
-    {
-      "name": "Usman Ubaid",
-      "age": 29,
-      "id": 3
+      "name": "spacey",
+      "age": 12,
+      "id": 5
     }
   ]
 }
